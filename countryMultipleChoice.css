@@ -1,0 +1,115 @@
+section {
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+}
+#earth {
+    position:fixed;
+    top:0;
+    left:0;
+}
+button:hover {
+    color: red;
+}
+#start {
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+#endOfQuiz {
+    display: none;
+    height: fit-content;
+}
+#congratulateText {
+    font-size: x-large;
+}
+label {
+    font-size: larger;
+}
+div {
+    text-align: center;
+    font-size: larger;
+}
+header {
+    text-align: center;
+    margin-top: 3%;
+}
+h1 {
+    font-size: 50px;
+}
+h3 {
+    font-size: xx-large;
+}
+#question1 {
+    display: none;
+}
+#question2 {
+    display: none;
+}
+#question3 {
+    display: none;
+}
+#question4 {
+    display: none;
+}
+#question5 {
+    display: none;
+}
+#question6 {
+    display: none;
+}
+#question7 {
+    display: none;
+}
+#question8 {
+    display: none;
+}
+#question9 {
+    display: none;
+}
+#question10 {
+    display: none;
+}
+#congratulate {
+    display: none;
+}
+body {
+    background-color: white;
+    color: black;
+}  
+.dark-mode {
+    background-color: black;
+    color: white;
+}#darkModeToggle {
+    position:fixed;
+    right:0;
+    bottom:0;
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+}
+.currentlyLight {
+    background-image: url("lightModeimage.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.currentlyDark {
+    background-image: url("darkModeimage.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries of the world quiz!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="countryMultipleChoice.css" rel="stylesheet">
+    <script src="countryMultipleChoice.js"></script> 
+    <!-- I i -->
+</head>
+<body>
+    <!-- <img src="globeSpinTwo.gif" height="10%" id="earth"> -->
+    <header>
+        <h1>Countries of the world quiz!</h1>
+        <h2>A fun multiple choice quiz!</h2>
+    </header>
+    <button id="start" onclick="startQuiz()">Start the quiz!</button>
+    <h3 id="congratulate"></h3>
+    <section id="question1">
+        <h3>What is the most populated country in Africa?</h3>
+        <div>
+            <button class="right" onclick="showQuestion2()">Nigeria</button>
+            <button onclick="wrongAnswer()">Mauritania</button>
+            <button onclick="wrongAnswer()">Algeria</button>
+            <button onclick="wrongAnswer()">Chad</button>
+        </div>
+    </section>
+    <section id="question2">
+        <h3>What is the 4th smallest country in the world?</h3>
+        <div>
+            <button onclick="wrongAnswer()">Monaco</button>
+            <button onclick="wrongAnswer()">Liechtenstein</button>
+            <button class="right" onclick="showQuestion3()">Tuvalu</button>
+            <button onclick="wrongAnswer()">Nauru</button>
+        </div>
+    </section>
+    <section id="question3">
+        <h3>Which country has Beirut as their capital?</h3>
+        <div> 
+            <button onclick="wrongAnswer()">Israel</button>
+            <button onclick="wrongAnswer()">Brunei</button>
+            <button class="right" onclick="showQuestion4()">Lebanon</button>
+            <button onclick="wrongAnswer()">Bahrain</button>
+        </div>
+    </section>
+    <section id="question4">
+        <h3>What is the capital of Serbia?</h3>
+        <div>   
+            <button onclick="wrongAnswer()">Subotica</button>
+            <button class="right" onclick="showQuestion5()">Belgrade</button>
+            <button onclick="wrongAnswer()">Smederevo</button>
+            <button onclick="wrongAnswer()">Zrenjanin</button>
+        </div>
+    </section>
+    <section id="question5">
+        <h3>Which of these countries have the equator pass through them?</h3>
+        <div>
+            <button onclick="wrongAnswer()">Venezuela</button>
+            <button class="right" onclick="showQuestion6()">Maldives</button>
+            <button onclick="wrongAnswer()">South Sudan</button>
+            <button onclick="wrongAnswer()">Equatorial Guinea</button>
+        </div>
+    </section>
+    <section id="question6">
+        <h3>How many countries have a non-rectangular flag?</h3>
+        <div>    
+            <button onclick="wrongAnswer()">1</button>
+            <button onclick="wrongAnswer()">2</button>
+            <button class="right" onclick="showQuestion7()">3</button>
+            <button onclick="wrongAnswer()">4</button>
+        </div>
+    </section>
+    <section id="question7">
+        <h3>Which country will you find the city Transylvania?</h3>
+        <div>   
+            <button class="right" onclick="showQuestion8()">Romania</button>
+            <button onclick="wrongAnswer()">Moldova</button>
+            <button onclick="wrongAnswer()">Bulgaria</button>
+            <button onclick="wrongAnswer()">Ukraine</button>
+        </div>
+    </section>
+    <section id="question8">
+        <h3>How far away is Seoul from the DMZ (North and South Korea border)</h3>
+        <div>
+            <button onclick="wrongAnswer()">≈150km (≈90mi)</button>
+            <button onclick="wrongAnswer()">≈35km (≈20mi)</button>
+            <button class="right" onclick="showQuestion9()">≈50km (≈30mi)</button>
+            <button onclick="wrongAnswer()">≈100km (≈60mi)</button>
+        </div>
+    </section>
+    <section id="question9">
+        <h3>How many countries border Germany?</h3>
+        <div>
+            <button onclick="wrongAnswer()">6</button>
+            <button onclick="wrongAnswer()">7</button>
+            <button onclick="wrongAnswer()">10</button>
+            <button class="right" onclick="showQuestion10()">9</button>
+        </div>
+    </section>
+    <section id="question10">
+        <h3>Which is the largest of the five main Japanese islands?</h3>
+        <div>
+            <button onclick="wrongAnswer()">Kyushu</button>
+            <button onclick="wrongAnswer()">Okinawa</button>
+            <button class="right" onclick="endOfPage()">Honshu</button>
+            <button onclick="wrongAnswer()">Hokkaido</button>
+        </div>
+    </section>
+    </section>
+    <!-- The section at the end of the quiz -->
+    <section id="endOfQuiz">
+        <form>
+            <label>Nickname (optional): <input type="text" id="name" name="name"></label> 
+            <button type="button" onclick="congratulate()">Submit</button>
+        </form>
+        <h3 id="congratulateText"></h3>
+        <button type="button" onclick="location.reload()">Restart the quiz</button>
+    </section>
+    <footer>
+        <h6>Code by me (shedeurcoder on Github and Shedeur#7708 on Discord)</h6>
+        <h6>No copyright. Feel free to borrow some code.</h6>
+        <abbr title="Dark Mode Toggle"><button id="darkModeToggle" onclick="toggleDarkMode()" class="currentlyLight"></button></abbr>
+    </footer>
+</body>
+</html>
